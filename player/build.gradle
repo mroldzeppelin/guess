@@ -1,0 +1,23 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompileOnly 'org.projectlombok:lombok:1.18.16'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+	testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-websocket'
+}
+
+test {
+	useJUnitPlatform()
+}

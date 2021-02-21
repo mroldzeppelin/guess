@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class IntegrationTest {
 
   private final int roundTime = 10;
-  private final int numberOfPlayers = 256;
+  private final int numberOfPlayers = 2048;
   private final int numberOfRounds = 3;
   private final int numberOfResponses = numberOfPlayers * numberOfRounds * 2;
 

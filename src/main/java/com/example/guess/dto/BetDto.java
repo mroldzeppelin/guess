@@ -8,7 +8,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
 
 @Data
-@Builder
 public class BetDto {
   @NotBlank(message = "User id cannot be empty")
   private String userId;
